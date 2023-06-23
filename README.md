@@ -10,4 +10,4 @@ docker run -p 5000:5000 --name inka -t inka
 ./technopark-dbms-forum fill --url=http://localhost:5000/api --timeout=900
 
 // тестирование:
-./technopark-dbms-forum perf --url=http://localhost:5000/api --duration=600 --step=60
+./technopark-dbms-forum perf --url=http://localhost:5000/api --duration=600 --step=60 
