@@ -20,7 +20,7 @@ RUN /etc/init.d/postgresql start &&\
     createdb -O inka db_forum &&\
     psql -f ./db/db.sql -d db_forum &&\
     /etc/init.d/postgresql stop
-# todo change user
+
 EXPOSE 5432
 VOLUME  ["/etc/postgresql", "/var/log/postgresql", "/var/lib/postgresql"]
 
